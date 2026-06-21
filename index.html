@@ -1,156 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://freqai.io/">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<title>FREQ AI | Autonomous Maritime Cargo Intelligence</title>
-<meta name="description" content="FREQ AI replaces the 4-hour manual barge drafting process with autonomous intelligence — 15-minute results, zero crew exposure.">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="FREQ AI">
-<meta property="og:title" content="FREQ AI | Autonomous Maritime Cargo Intelligence">
-<meta property="og:description" content="FREQ AI replaces the 4-hour manual barge drafting process with autonomous intelligence — 15-minute results, zero crew exposure.">
-<meta property="og:image" content="https://freqai.io/og-image.svg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://freqai.io/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://freqai.io/og-image.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "FREQ AI",
-  "description": "Autonomous maritime cargo intelligence platform",
-  "url": "https://freqai.io",
-  "foundingDate": "2024",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Slidell",
-    "addressRegion": "LA",
-    "addressCountry": "US"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "info@freqai.io",
-    "contactType": "sales"
-  }
-}
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FREQ AI — Autonomous Maritime Cargo Intelligence</title>
+  <meta name="description" content="FREQ AI automates maritime cargo drafting with LiDAR intelligence, BARGE-402 locked metrics, and a verified simulation ground.">
+  <link rel="canonical" href="https://freqsystems.dev/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<nav class="site-nav">
-  <div class="container nav-inner">
-    <a href="/" class="nav-logo">FREQ AI</a>
-    <div class="nav-links">
-      <a href="/platform">Platform</a>
-      <a href="/solutions/barge-drafting">Solutions</a>
-      <a href="/about">About</a>
-      <a href="/team">Team</a>
-      <a href="/contact">Contact</a>
-      <a href="/contact" class="btn-primary nav-cta">Get Started</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/" aria-label="FREQ AI home"><span class="brand-mark">F</span><span>FREQ AI</span></a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-button>Menu</button>
+      <nav class="nav-links" aria-label="Primary navigation" data-nav-links>
+        <a href="/" aria-current="page">Home</a>
+        <a href="/simulation">Simulation</a>
+        <a href="/architecture">Architecture</a>
+        <a href="/contact">Contact</a>
+      </nav>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <div class="mobile-menu" id="mobile-menu">
-    <a href="/platform">Platform</a>
-    <a href="/solutions/barge-drafting">Solutions</a>
-    <a href="/about">About</a>
-    <a href="/team">Team</a>
-    <a href="/contact">Contact</a>
-    <a href="/contact" class="btn-primary">Get Started</a>
-  </div>
-</nav>
-<section class="section blueprint-bg hero-section">
-  <div class="container">
-    <span class="eyebrow">Maritime Intelligence Platform</span>
-    <h1>Maritime Cargo Drafting, Reinvented.</h1>
-    <p class="hero-sub">FREQ AI replaces the 4-hour manual barge drafting process with autonomous intelligence — delivering results in 15 minutes with zero crew exposure.</p>
-    <div class="hero-ctas">
-      <a href="/platform" class="btn-primary">Explore the Platform</a>
-      <a href="/contact" class="btn-outline">Contact Us</a>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <span class="section-label">The Problem</span>
-    <h2>An Industry Running on Outdated Methods</h2>
-    <p class="section-body">Every day, thousands of barges on America’s inland waterways undergo a manual cargo drafting process that hasn’t changed in decades. Crew members walk barge decks in hazardous conditions, take manual gauge readings, relay numbers by radio, and compile reports by hand. The process takes 4 hours per barge, introduces 1–3% measurement error, and exposes workers to the highest non-navigational fatality risk in the maritime industry.</p>
-    <div class="stat-grid">
-      <div class="card stat-card"><div class="stat-number">$2.1B</div><div class="stat-desc">Annual cargo discrepancies on US inland waterways</div></div>
-      <div class="card stat-card"><div class="stat-number">4 Hours</div><div class="stat-desc">Average manual drafting time per barge</div></div>
-      <div class="card stat-card"><div class="stat-number">1–3%</div><div class="stat-desc">Industry-standard measurement error rate</div></div>
-      <div class="card stat-card"><div class="stat-number">#1 Risk</div><div class="stat-desc">Man overboard — leading non-navigational fatality</div></div>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <span class="section-label">The Solution</span>
-    <h2>The Intelligence Layer Maritime Has Been Missing</h2>
-    <p class="section-body">FREQ AI builds autonomous intelligence for maritime cargo operations. Our platform replaces manual processes with AI-driven data acquisition, real-time analysis, and verified reporting — reducing drafting time by over 90% while eliminating crew safety risk entirely.</p>
-    <div class="stat-grid">
-      <div class="card"><div class="stat-number">10–15 Min</div><h3>Autonomous Drafting</h3><p>What took 4 hours now takes minutes through automated data acquisition and AI-driven analysis.</p></div>
-      <div class="card"><div class="stat-number">Sub-Inch</div><h3>Precision Measurement</h3><p>Exceeding manual accuracy by orders of magnitude, eliminating cargo discrepancies and revenue leakage.</p></div>
-      <div class="card"><div class="stat-number">Zero</div><h3>Crew Exposure</h3><p>No personnel required on deck during drafting operations. Man-overboard risk eliminated entirely.</p></div>
-      <div class="card"><div class="stat-number">Real-Time</div><h3>Continuous Intelligence</h3><p>Live cargo status, draft readings, and stability metrics available instantly to all stakeholders.</p></div>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <h2>Four Steps from Vessel to Verified Report</h2>
-    <div class="steps-grid">
-      <div class="step-card"><div class="step-num">01</div><h3>Target</h3><p>Identify the vessel and define operational parameters for the drafting sequence.</p></div>
-      <div class="step-card"><div class="step-num">02</div><h3>Execute</h3><p>Autonomous data acquisition captures precise measurements across the entire vessel.</p></div>
-      <div class="step-card"><div class="step-num">03</div><h3>Analyze</h3><p>AI-driven intelligence processes raw data into verified cargo metrics in real-time.</p></div>
-      <div class="step-card"><div class="step-num">04</div><h3>Report</h3><p>Comprehensive draft readings, stability analysis, and compliance documentation delivered instantly.</p></div>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container">
-    <span class="section-label">The Opportunity</span>
-    <h2>America’s Inland Waterways Are Ready for Transformation</h2>
-    <p class="section-body">The US inland waterway system is the backbone of domestic commerce — and it is overdue for modernization.</p>
-    <div class="stat-grid">
-      <div class="card stat-card"><div class="stat-number">22,356</div><div class="stat-desc">Active barges on US inland waterways</div></div>
-      <div class="card stat-card"><div class="stat-number">600M+</div><div class="stat-desc">Tons of cargo transported annually</div></div>
-      <div class="card stat-card"><div class="stat-number">$6.96B</div><div class="stat-desc">Autonomous maritime market size (2025)</div></div>
-      <div class="card stat-card"><div class="stat-number">D+</div><div class="stat-desc">ASCE infrastructure grade for inland waterways</div></div>
-    </div>
-  </div>
-</section>
-<section class="section cta-section">
-  <div class="container" style="text-align:center;">
-    <h2>Ready to modernize your cargo operations?</h2>
-    <p class="section-body">Connect with our team to learn how FREQ AI can transform your maritime drafting process.</p>
-    <a href="/contact" class="btn-primary">Get in Touch</a>
-    <p class="cta-email"><a href="mailto:info@freqai.io">info@freqai.io</a></p>
-  </div>
-</section>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div><div class="footer-logo">FREQ AI</div><p class="footer-tagline">Autonomous Maritime Intelligence</p></div>
-    <div><div class="footer-heading">Product</div><a href="/platform">Platform</a><a href="/solutions/barge-drafting">Barge Drafting</a></div>
-    <div><div class="footer-heading">Company</div><a href="/about">About</a><a href="/team">Team</a><a href="/contact">Contact</a></div>
-    <div><div class="footer-heading">Connect</div><a href="mailto:info@freqai.io">info@freqai.io</a><a href="https://linkedin.com/in/andry-alvarez" target="_blank" rel="noopener">LinkedIn</a><span class="footer-location">Slidell, Louisiana</span></div>
-  </div>
-  <div class="footer-bottom container"><span>© 2026 FREQ AI. All rights reserved.</span></div>
-</footer>
-<script>
-document.getElementById('hamburger').addEventListener('click', function() {
-  document.getElementById('mobile-menu').classList.toggle('open');
-});
-</script>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-scene" data-hero-scene aria-hidden="true">
+        <svg class="hero-art" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="nightSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D1220"/><stop offset="1" stop-color="#080C18"/></linearGradient>
+            <linearGradient id="nightWater" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0D1220"/><stop offset=".5" stop-color="#111a30"/><stop offset="1" stop-color="#080C18"/></linearGradient>
+          </defs>
+          <rect width="1200" height="700" fill="url(#nightSky)"/>
+          <circle cx="940" cy="125" r="2" fill="#CBD5E1" opacity=".55"/><circle cx="820" cy="84" r="2" fill="#CBD5E1" opacity=".35"/><circle cx="1070" cy="205" r="2" fill="#CBD5E1" opacity=".42"/>
+          <rect y="455" width="1200" height="245" fill="url(#nightWater)"/>
+          <path d="M0 485 C150 468 240 500 390 482 S690 470 840 487 S1060 501 1200 478" fill="none" stroke="#6366F1" opacity=".42" stroke-width="2"/>
+          <g opacity=".92">
+            <rect x="675" y="225" width="34" height="260" fill="#141b2d" stroke="#6366F1"/>
+            <path d="M692 245 L1060 155 L1082 174 L710 272 Z" fill="#141b2d" stroke="#6366F1"/>
+            <line x1="1050" y1="167" x2="1050" y2="390" stroke="#6366F1" stroke-width="3"/>
+            <path d="M1035 390 h30 l-7 42 h-16 z" fill="#0D1220" stroke="#6366F1"/>
+          </g>
+          <g>
+            <path d="M380 430 H1060 L1120 488 L1080 540 H430 L360 500 Z" fill="#111827" stroke="#6366F1" stroke-width="2"/>
+            <rect x="450" y="372" width="145" height="62" rx="5" fill="#080C18" stroke="#6366F1"/>
+            <rect x="635" y="372" width="145" height="62" rx="5" fill="#080C18" stroke="#6366F1"/>
+            <rect x="820" y="372" width="145" height="62" rx="5" fill="#080C18" stroke="#6366F1"/>
+            <text x="405" y="520" fill="#CBD5E1" font-family="JetBrains Mono" font-size="18">BARGE-402 · 45m × 10m</text>
+          </g>
+          <g opacity=".54" stroke="#6366F1" fill="none"><path d="M320 300 H1125"/><path d="M320 330 H1125"/><path d="M320 360 H1125"/><path d="M420 215 V565"/><path d="M520 215 V565"/><path d="M620 215 V565"/><path d="M720 215 V565"/><path d="M820 215 V565"/><path d="M920 215 V565"/></g>
+        </svg>
+      </div>
+      <div class="container hero-body">
+        <p class="live-label"><span class="live-dot"></span>BARGE-402 · LIVE · METRICS-LOCKED</p>
+        <h1>Autonomous Maritime Cargo Intelligence</h1>
+        <p class="hero-note">A manual draft survey takes a four-person crew four hours on open deck. FREQ AI runs it in fourteen minutes, unmanned, accurate to ±0.02 ft — proven on BARGE-402 and ready to scale across the fleet.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="/architecture">View Architecture</a>
+          <a class="button button-secondary" href="/simulation">See Simulation Ground</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">01 · Systems</p>
+        <h2>Six subsystems. One operational lattice.</h2>
+        <div class="card-grid">
+          <article class="card"><div class="card-icon">01</div><h3>MSO Architecture</h3><p>Mission, simulation, and operation are orchestrated as one deployable maritime system.</p></article>
+          <article class="card"><div class="card-icon">02</div><h3>Digital Shadow</h3><p>A live operational mirror tracks vessel state, station logic, draft, list, and survey confidence.</p></article>
+          <article class="card"><div class="card-icon">03</div><h3>BARGE-402 Locked Metrics</h3><p>45m × 10m, 1,482.6T maximum cargo, and all six survey stations remain immutable.</p></article>
+          <article class="card"><div class="card-icon">04</div><h3>LiDAR Draft Intelligence</h3><p>Scan-based readings across FP, FS, MP, MS, AP, and AS resolve draft to ±0.02 ft.</p></article>
+          <article class="card"><div class="card-icon">05</div><h3>Crane-Side Execution</h3><p>Barge state governs cargo movement, trim correction, and stability thresholds at the crane.</p></article>
+          <article class="card"><div class="card-icon">06</div><h3>Investor-Grade Simulation</h3><p>A six-phase proof surface demonstrates the system operating end to end — proof, not pitch.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <p class="eyebrow">02 · Architecture Flow</p>
+        <h2>From sensor to decision surface.</h2>
+        <div class="pipeline" aria-label="FREQ AI architecture pipeline">
+          <div class="pipeline-step"><span>01</span><strong>Sensor / LiDAR</strong></div>
+          <div class="pipeline-step"><span>02</span><strong>BARGE-402 Draft</strong></div>
+          <div class="pipeline-step"><span>03</span><strong>SOL Lattice</strong></div>
+          <div class="pipeline-step"><span>04</span><strong>Simulation Ground</strong></div>
+          <div class="pipeline-step"><span>05</span><strong>Crane Execution</strong></div>
+          <div class="pipeline-step"><span>06</span><strong>Investor Decision</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-panel">
+        <div><p class="eyebrow">03 · Engagement</p><h2>Build the Maritime Intelligence Layer</h2><p class="contact-code">dre.freqsystem@outlook.com</p></div>
+        <a class="button button-primary" href="/contact">Contact Chief Dre</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-shell"><strong>FREQ AI</strong><span class="footer-lock">BARGE-402 // METRICS-LOCKED</span><span>© 2026 FREQ AI</span></div></footer>
+  <script src="/app.js"></script>
 </body>
 </html>
