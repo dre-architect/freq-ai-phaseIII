@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulation Ground — FREQ AI</title>
+  <meta name="description" content="Six locked BARGE-402 simulation phases with synchronized draft, list, cargo, LiDAR, crane, and stability telemetry.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css">
+  <style>.sim-stage-css{height:560px}.css-water{position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(90deg,#0D1220,#10192C)}.css-waterline{position:absolute;left:0;right:0;bottom:34%;height:2px;background:#6366F1;opacity:.56}.css-crane{position:absolute;left:9%;bottom:26%;width:38%;height:52%}.crane-tower{position:absolute;left:9%;bottom:0;width:44px;height:70%;border:2px solid #6366F1;background:#151c2e}.crane-arm{position:absolute;left:15%;top:6%;width:78%;height:24px;border:2px solid #6366F1;background:#151c2e;transform:rotate(-13deg);transform-origin:left center}.crane-cable{position:absolute;right:6%;top:16%;height:48%;border-left:3px solid #6366F1}.crane-hook{position:absolute;right:3%;top:63%;width:30px;height:42px;border:2px solid #6366F1;background:#0D1220;clip-path:polygon(12% 0,88% 0,72% 100%,28% 100%)}.css-barge{position:absolute;left:31%;right:9%;bottom:24%;height:88px;border:2px solid #6366F1;border-radius:10px;background:#111827;box-shadow:0 24px 42px rgba(0,0,0,.48)}.css-barge:before{content:"";position:absolute;left:2%;right:2%;top:-6px;border-top:3px solid rgba(203,213,225,.55)}.css-barge .hold{position:absolute;top:-42px;width:22%;height:44px;border:2px solid #6366F1;border-radius:4px;background:#080C18;overflow:hidden}.hold-a{left:8%}.hold-b{left:39%}.hold-c{left:70%}.css-barge .hold span{position:absolute;left:0;right:0;bottom:0;height:0;background:#8b6b3e;transition:height .42s ease}.station{position:absolute;bottom:7px;color:#CBD5E1;font-family:"JetBrains Mono",monospace;font-size:12px}.fp{left:5%}.fs{left:18%}.mp{left:40%}.ms{left:51%}.ap{left:73%}.as{left:86%}.css-lidar{position:absolute;left:57%;top:28%;width:22px;height:144px;border:2px solid #6366F1;background:#0D1220}.css-lidar:before{content:"";position:absolute;left:-14px;top:-36px;width:46px;height:46px;border:2px solid #6366F1;border-radius:50%;background:#0D1220}.css-lidar span{position:absolute;left:50%;top:-18px;width:330px;height:190px;background:rgba(56,189,248,.12);border:2px solid #38BDF8;clip-path:polygon(0 0,100% 50%,0 100%);transform-origin:left center;animation:cssSweep 2.6s ease-in-out infinite}.simulation-paused .css-lidar span{animation-play-state:paused}@keyframes cssSweep{0%,100%{opacity:.22;transform:rotate(-5deg)}50%{opacity:.7;transform:rotate(5deg)}}</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-shell"><a class="brand" href="/"><span class="brand-mark">F</span><span>FREQ AI</span></a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-button>Menu</button><nav class="nav-links" aria-label="Primary navigation" data-nav-links><a href="/">Home</a><a href="/simulation" aria-current="page">Simulation</a><a href="/architecture">Architecture</a><a href="/contact">Contact</a></nav></div></header>
+  <main id="main" data-simulation>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Simulation Ground</p><h1>Six locked phases. Live proof surface.</h1><p class="lede">Pre-survey, ballast adjustment, crane position, cargo load, trim correction, final survey — six phases, one continuous run. Click any phase to inspect.</p></div></section>
+    <section class="section-tight"><div class="container">
+      <div class="phase-rail" role="tablist" aria-label="Simulation phases" data-phase-rail></div>
+      <div class="simulation-grid">
+        <div class="sim-stage sim-stage-css" aria-label="BARGE-402 visual simulation stage">
+          <div class="phase-name" data-phase-name>PRE-SURVEY</div>
+          <div class="css-water"></div><div class="css-waterline"></div>
+          <div class="css-crane"><span class="crane-tower"></span><span class="crane-arm"></span><span class="crane-cable"></span><span class="crane-hook"></span></div>
+          <div class="css-barge"><span class="station fp">FP</span><span class="station fs">FS</span><span class="station mp">MP</span><span class="station ms">MS</span><span class="station ap">AP</span><span class="station as">AS</span><div class="hold hold-a"><span data-cargo-a></span></div><div class="hold hold-b"><span data-cargo-b></span></div><div class="hold hold-c"><span data-cargo-c></span></div></div>
+          <div class="css-lidar"><span></span></div>
+        </div>
+        <aside class="telemetry-panel" aria-label="Live telemetry"><h2>Telemetry</h2><dl class="telemetry-list"><div class="telemetry-row"><dt>Phase</dt><dd data-t-phase>PRE-SURVEY</dd></div><div class="telemetry-row"><dt>Draft</dt><dd><span data-t-draft>10.80</span> ft</dd></div><div class="telemetry-row"><dt>List</dt><dd><span data-t-list>0.00</span> deg</dd></div><div class="telemetry-row"><dt>Hold Fill</dt><dd><span data-t-fill>08</span>%</dd></div><div class="telemetry-row"><dt>LiDAR</dt><dd data-t-lidar>SCANNING</dd></div><div class="telemetry-row"><dt>Crane</dt><dd data-t-crane>LOCKED</dd></div><div class="telemetry-row"><dt>Stability</dt><dd data-t-stability>ACTIVE</dd></div></dl><button class="pause-button" type="button" aria-pressed="false" data-pause>Pause Simulation</button></aside>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-shell"><strong>FREQ AI</strong><span class="footer-lock">BARGE-402 // SIX PHASES</span><span>© 2026 FREQ AI</span></div></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
