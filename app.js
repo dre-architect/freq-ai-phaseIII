@@ -50,8 +50,12 @@
       ['[data-cargo-a]', '[data-cargo-b]', '[data-cargo-c]'].forEach((selector, index) => {
         const element = simulation.querySelector(selector);
         if (!element) return;
-        element.setAttribute('height', heights[index].toFixed(1));
-        element.setAttribute('y', (282 - heights[index]).toFixed(1));
+        if (element instanceof SVGElement) {
+          element.setAttribute('height', heights[index].toFixed(1));
+          element.setAttribute('y', (282 - heights[index]).toFixed(1));
+        } else {
+          element.style.height = `${heights[index]}px`;
+        }
       });
     };
 
