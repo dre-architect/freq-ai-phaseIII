@@ -1,4 +1,5 @@
 (() => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const menuButton = document.querySelector('[data-menu-button]');
   const menu = document.querySelector('[data-nav-links]');
   if (menuButton && menu) {
@@ -9,7 +10,7 @@
   }
 
   const heroScene = document.querySelector('[data-hero-scene]');
-  if (heroScene && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  if (heroScene && !reducedMotion) {
     window.addEventListener('pointermove', (event) => {
       const x = ((event.clientX / window.innerWidth) - 0.5) * 7;
       const y = ((event.clientY / window.innerHeight) - 0.5) * 7;
@@ -20,6 +21,12 @@
 
   const simulation = document.querySelector('[data-simulation]');
   if (simulation) {
+    if (reducedMotion) {
+      simulation.querySelectorAll('.css-lidar span').forEach((element) => {
+        element.style.animation = 'none';
+      });
+    }
+
     const phases = [
       { name: 'PRE-SURVEY', draft: 10.80, list: 0.00, fill: 8, lidar: 'SCANNING', crane: 'LOCKED', stability: 'ACTIVE' },
       { name: 'BALLAST-ADJ', draft: 11.35, list: 0.18, fill: 12, lidar: 'VERIFY', crane: 'STANDBY', stability: 'ACTIVE' },
